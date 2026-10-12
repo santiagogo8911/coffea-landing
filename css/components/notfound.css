@@ -1,0 +1,10 @@
+@layer components {
+  .notfound {
+    padding-block: 12rem 6rem;
+    text-align: center;
+    background: var(--color-espresso);
+    color: var(--color-white);
+  }
+  .notfound__title { font-family: var(--font-display); font-weight: 700; font-size: var(--fs-hero); }
+  .notfound__text { margin-top: var(--space-4); }
+}

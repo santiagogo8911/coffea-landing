@@ -1,0 +1,122 @@
+@layer components {
+  .icon {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: currentColor;
+    -webkit-mask: var(--icon) center / contain no-repeat;
+    mask: var(--icon) center / contain no-repeat;
+    flex: none;
+  }
+  .icon--search { --icon: url("../../assets/icons/search.svg"); }
+  .icon--heart { --icon: url("../../assets/icons/heart.svg"); }
+  .icon--arrow { --icon: url("../../assets/icons/arrow.svg"); }
+  .icon--chevron { --icon: url("../../assets/icons/chevron.svg"); width: 1.25rem; height: 1.25rem; }
+  .icon--mail { --icon: url("../../assets/icons/mail.svg"); }
+  .icon--social-x { --icon: url("../../assets/icons/social-x.svg"); }
+  .icon--social-instagram { --icon: url("../../assets/icons/social-instagram.svg"); }
+  .icon--social-facebook { --icon: url("../../assets/icons/social-facebook.svg"); }
+  .icon--social-linkedin { --icon: url("../../assets/icons/social-linkedin.svg"); }
+  .icon--cat-hot-coffee { --icon: url("../../assets/icons/cat-hot-coffee.svg"); }
+  .icon--cat-cold-coffee { --icon: url("../../assets/icons/cat-cold-coffee.svg"); }
+  .icon--cat-cup-coffee { --icon: url("../../assets/icons/cat-cup-coffee.svg"); }
+  .icon--cat-dessert { --icon: url("../../assets/icons/cat-dessert.svg"); }
+
+  .header {
+    position: absolute;
+    inset: var(--space-6) 0 auto 0;
+    z-index: 10;
+    color: var(--color-white);
+  }
+
+  .header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+  }
+
+  .header__logo {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--fs-logo);
+    text-transform: lowercase;
+    min-height: var(--touch);
+    display: inline-flex;
+    align-items: center;
+    margin-right: auto;
+  }
+
+  .header__search {
+    display: grid;
+    place-items: center;
+    width: var(--touch);
+    height: var(--touch);
+    border-radius: 50%;
+    background: var(--color-white);
+    color: var(--color-espresso);
+  }
+
+  .nav__list { display: flex; gap: var(--space-10); }
+
+  .nav__link {
+    font-family: var(--font-ui);
+    font-weight: 500;
+    font-size: var(--fs-md);
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--touch);
+    transition: opacity var(--transition);
+  }
+  .nav__link--strong { font-weight: 600; }
+  .nav__link:hover { opacity: 0.75; }
+
+  .nav--desktop { display: none; }
+
+  /* Menú hamburguesa CSS-only */
+  .menu { position: relative; }
+  .menu__toggle {
+    list-style: none;
+    display: grid;
+    place-items: center;
+    width: var(--touch);
+    height: var(--touch);
+    cursor: pointer;
+  }
+  .menu__toggle::-webkit-details-marker { display: none; }
+  .menu__bars,
+  .menu__bars::before,
+  .menu__bars::after {
+    display: block;
+    width: 1.5rem;
+    height: 2px;
+    background: var(--color-white);
+    border-radius: 2px;
+    content: "";
+  }
+  .menu__bars { position: relative; }
+  .menu__bars::before { position: absolute; top: -7px; }
+  .menu__bars::after { position: absolute; top: 7px; }
+
+  .nav--mobile {
+    position: absolute;
+    right: 0;
+    top: calc(100% + var(--space-2));
+    min-width: 12rem;
+    padding: var(--space-4) var(--space-6);
+    background: var(--color-espresso);
+    border-radius: var(--radius-card);
+  }
+  .nav--mobile .nav__list { flex-direction: column; gap: 0; }
+
+  .header__search { order: 3; }
+
+  @media (min-width: 1024px) {
+    .header { inset-block-start: var(--space-14); }
+    .nav--desktop { display: block; margin-right: var(--space-10); }
+    .menu { display: none; }
+    .header__logo { margin-right: auto; }
+    .header__search { width: 3.8125rem; height: 3.8125rem; } /* 61px */
+  }
+}
