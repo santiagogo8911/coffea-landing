@@ -55,8 +55,8 @@
     }
     .carousel__arrow:hover { background: var(--color-maroon); }
     .carousel__arrow .icon { width: 2rem; height: 2rem; }
-    .carousel__arrow--prev { left: max(0.25rem, calc((100vw - 92.25rem) / 2 - 8.875rem)); }
+    .carousel__arrow--prev { left: max(-8.875rem, calc(-1 * ((100vw - 100%) / 2 - 0.25rem))); }
     .carousel__arrow--prev .icon { transform: scaleX(-1); }
-    .carousel__arrow--next { right: max(0.25rem, calc((100vw - 92.25rem) / 2 - 8.875rem)); }
+    .carousel__arrow--next { right: max(-8.875rem, calc(-1 * ((100vw - 100%) / 2 - 0.25rem))); }
   }
 }

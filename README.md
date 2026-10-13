@@ -18,7 +18,7 @@ coffea-landing/
 │   └── components/       # header, hero, categories, product-card, carousel,
 │                         # promo, testimonial-card, newsletter, footer, notfound
 └── assets/
-    ├── img/              # imágenes (placeholders SVG, ver "Pendientes")
+    ├── img/              # imágenes del Figma en AVIF + WebP + JPG/PNG
     └── icons/            # íconos SVG
 ```
 
@@ -50,10 +50,10 @@ Como `/css/*` y `/assets/*` son `immutable`, si cambiás un archivo renombralo c
 
 ## Pendientes / decisiones abiertas
 
-- **Imágenes:** son placeholders SVG. Exportar desde Figma los 15 rasters (hero, 4 café, 4 postre, mano, granos, newsletter, 3 avatares) a 2x, comprimir a AVIF/WebP + JPG y usar `<picture>`, `srcset`/`sizes`. Confirmar licencia (hay una foto de iStock).
+- **Imágenes:** exportadas del Figma a 1x (el diseño no trae 2x) y servidas con `<picture>` (AVIF → WebP → JPG/PNG). Las de las tarjetas son 334 × 364 px, así que en pantallas retina se ven un poco blandas; para mejorarlas, exportar a 2x. Los 3 avatares de testimonios siguen siendo placeholders SVG. Una foto del template es de iStock: confirmar licencia antes de publicar.
 - **Copy:** corregidos los typos del Figma; textos de cards y testimonios siguen siendo placeholders. Idioma `lang="en"`, confirmar.
 - **Moneda:** "Rs." como en el diseño; confirmar.
-- **Dessert:** usa las mismas fotos placeholder; pedir fotos de postres.
+- **Dessert:** el Figma no trae fotos de postres; la sección usa fotos de café, y los nombres de las cards siguen siendo placeholders. Pedir fotos de postres o ajustar los nombres.
 - **Tablet/mobile:** propuesta de la sección 7 del PRD, validar con diseño.
 - **Flechas del carrusel:** se muestran desde 1440 px como anclas a la primera/última card.
 - **Fuentes:** Google Fonts con `display=swap`; evaluar autohospedar en woff2.

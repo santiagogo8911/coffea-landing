@@ -8,12 +8,12 @@
   <meta property="og:title" content="Coffea | The richest coffee in the city">
   <meta property="og:description" content="Explore our special coffee and dessert menu.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/img/hero.svg">
+  <meta property="og:image" content="assets/img/hero.jpg">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&amp;family=Playfair+Display:wght@500;600;700&amp;family=Poppins:wght@400;500;600&amp;family=Reggae+One&amp;display=swap">
-  <link rel="preload" as="image" href="assets/img/hero.svg" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/img/hero.avif" type="image/avif" fetchpriority="high">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -51,12 +51,12 @@
 
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
-      <img class="hero__bg" src="assets/img/hero.svg" alt="Cup of espresso surrounded by coffee beans" width="1920" height="1000" fetchpriority="high" decoding="async">
+      <picture><source srcset="assets/img/hero.avif" type="image/avif"><source srcset="assets/img/hero.webp" type="image/webp"><img class="hero__bg" src="assets/img/hero.jpg" alt="Cappuccino with heart latte art surrounded by coffee beans" width="1920" height="1000" fetchpriority="high" decoding="async"></picture>
       <div class="container hero__inner">
         <div class="hero__content">
           <p class="hero__eyebrow">Welcome</p>
           <h1 class="hero__title" id="hero-title">We serve the richest coffee in the city!</h1>
-          <p class="hero__text">probando</p>
+          <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
           <a class="hero__btn" href="#coffee-title">Order Now</a>
         </div>
       </div>
@@ -78,7 +78,7 @@
         <div class="carousel__track" role="group" aria-label="Our Special Coffee" tabindex="0">
           <article class="product-card" id="coffee-1">
             <div class="product-card__media">
-              <img class="product-card__img" src="assets/img/coffee-1.svg" alt="Cup of lungo coffee" width="334" height="364" loading="lazy" decoding="async">
+              <picture><source srcset="assets/img/coffee-1.avif" type="image/avif"><source srcset="assets/img/coffee-1.webp" type="image/webp"><img class="product-card__img" src="assets/img/coffee-1.jpg" alt="Espresso in a white cup on a light blue saucer" width="334" height="364" loading="lazy" decoding="async"></picture>
               <input class="product-card__fav-input visually-hidden" type="checkbox" id="fav-coffee-1">
               <label class="product-card__fav" for="fav-coffee-1">
                 <span class="visually-hidden">Add Lungo coffee to favorites</span>
@@ -86,7 +86,7 @@
               </label>
             </div>
             <h3 class="product-card__title">Lungo coffee</h3>
-            <p class="product-card__desc">probandq descripcion de cafe</p>
+            <p class="product-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
             <div class="product-card__row">
               <p class="product-card__price"><span aria-hidden="true">Rs. </span><data value="200">200</data></p>
               <a class="product-card__btn" href="#">Order Now<span class="visually-hidden"> Lungo coffee</span></a>
@@ -94,7 +94,7 @@
           </article>
           <article class="product-card" id="coffee-2">
             <div class="product-card__media">
-              <img class="product-card__img" src="assets/img/coffee-2.svg" alt="Cup of lungo coffee" width="334" height="364" loading="lazy" decoding="async">
+              <picture><source srcset="assets/img/coffee-2.avif" type="image/avif"><source srcset="assets/img/coffee-2.webp" type="image/webp"><img class="product-card__img" src="assets/img/coffee-2.jpg" alt="Latte with heart-shaped latte art in a white cup" width="334" height="364" loading="lazy" decoding="async"></picture>
               <input class="product-card__fav-input visually-hidden" type="checkbox" id="fav-coffee-2">
               <label class="product-card__fav" for="fav-coffee-2">
                 <span class="visually-hidden">Add Lungo coffee to favorites</span>
@@ -102,7 +102,7 @@
               </label>
             </div>
             <h3 class="product-card__title">Lungo coffee</h3>
-            <p class="product-card__desc">probandq descripcion de cafe</p>
+            <p class="product-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
             <div class="product-card__row">
               <p class="product-card__price"><span aria-hidden="true">Rs. </span><data value="200">200</data></p>
               <a class="product-card__btn" href="#">Order Now<span class="visually-hidden"> Lungo coffee</span></a>
@@ -110,7 +110,7 @@
           </article>
           <article class="product-card" id="coffee-3">
             <div class="product-card__media">
-              <img class="product-card__img" src="assets/img/coffee-3.svg" alt="Cup of lungo coffee" width="334" height="364" loading="lazy" decoding="async">
+              <picture><source srcset="assets/img/coffee-3.avif" type="image/avif"><source srcset="assets/img/coffee-3.webp" type="image/webp"><img class="product-card__img" src="assets/img/coffee-3.jpg" alt="Cappuccino with latte art on a round wooden table, seen from above" width="334" height="364" loading="lazy" decoding="async"></picture>
               <input class="product-card__fav-input visually-hidden" type="checkbox" id="fav-coffee-3">
               <label class="product-card__fav" for="fav-coffee-3">
                 <span class="visually-hidden">Add Lungo coffee to favorites</span>
@@ -118,7 +118,7 @@
               </label>
             </div>
             <h3 class="product-card__title">Lungo coffee</h3>
-            <p class="product-card__desc">probandq descripcion de cafe</p>
+            <p class="product-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
             <div class="product-card__row">
               <p class="product-card__price"><span aria-hidden="true">Rs. </span><data value="200">200</data></p>
               <a class="product-card__btn" href="#">Order Now<span class="visually-hidden"> Lungo coffee</span></a>
@@ -126,7 +126,7 @@
           </article>
           <article class="product-card" id="coffee-4">
             <div class="product-card__media">
-              <img class="product-card__img" src="assets/img/coffee-4.svg" alt="Cup of lungo coffee" width="334" height="364" loading="lazy" decoding="async">
+              <picture><source srcset="assets/img/coffee-4.avif" type="image/avif"><source srcset="assets/img/coffee-4.webp" type="image/webp"><img class="product-card__img" src="assets/img/coffee-4.jpg" alt="Cappuccino in a white cup on a sunlit wooden table" width="334" height="364" loading="lazy" decoding="async"></picture>
               <input class="product-card__fav-input visually-hidden" type="checkbox" id="fav-coffee-4">
               <label class="product-card__fav" for="fav-coffee-4">
                 <span class="visually-hidden">Add Lungo coffee to favorites</span>
@@ -134,7 +134,7 @@
               </label>
             </div>
             <h3 class="product-card__title">Lungo coffee</h3>
-            <p class="product-card__desc">probandq descripcion de cafe</p>
+            <p class="product-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
             <div class="product-card__row">
               <p class="product-card__price"><span aria-hidden="true">Rs. </span><data value="200">200</data></p>
               <a class="product-card__btn" href="#">Order Now<span class="visually-hidden"> Lungo coffee</span></a>
@@ -142,7 +142,7 @@
           </article>
           <article class="product-card" id="coffee-5">
             <div class="product-card__media">
-              <img class="product-card__img" src="assets/img/coffee-1.svg" alt="Cup of lungo coffee" width="334" height="364" loading="lazy" decoding="async">
+              <picture><source srcset="assets/img/coffee-1.avif" type="image/avif"><source srcset="assets/img/coffee-1.webp" type="image/webp"><img class="product-card__img" src="assets/img/coffee-1.jpg" alt="Espresso in a white cup on a light blue saucer" width="334" height="364" loading="lazy" decoding="async"></picture>
               <input class="product-card__fav-input visually-hidden" type="checkbox" id="fav-coffee-5">
               <label class="product-card__fav" for="fav-coffee-5">
                 <span class="visually-hidden">Add Lungo coffee to favorites</span>
@@ -150,7 +150,7 @@
               </label>
             </div>
             <h3 class="product-card__title">Lungo coffee</h3>
-            <p class="product-card__desc">probandq descripcion de cafe</p>
+            <p class="product-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
             <div class="product-card__row">
               <p class="product-card__price"><span aria-hidden="true">Rs. </span><data value="200">200</data></p>
               <a class="product-card__btn" href="#">Order Now<span class="visually-hidden"> Lungo coffee</span></a>
@@ -158,7 +158,7 @@
           </article>
           <article class="product-card" id="coffee-6">
             <div class="product-card__media">
-              <img class="product-card__img" src="assets/img/coffee-2.svg" alt="Cup of lungo coffee" width="334" height="364" loading="lazy" decoding="async">
+              <picture><source srcset="assets/img/coffee-2.avif" type="image/avif"><source srcset="assets/img/coffee-2.webp" type="image/webp"><img class="product-card__img" src="assets/img/coffee-2.jpg" alt="Latte with heart-shaped latte art in a white cup" width="334" height="364" loading="lazy" decoding="async"></picture>
               <input class="product-card__fav-input visually-hidden" type="checkbox" id="fav-coffee-6">
               <label class="product-card__fav" for="fav-coffee-6">
                 <span class="visually-hidden">Add Lungo coffee to favorites</span>
@@ -166,7 +166,7 @@
               </label>
             </div>
             <h3 class="product-card__title">Lungo coffee</h3>
-            <p class="product-card__desc">probandq descripcion de cafe</p>
+            <p class="product-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
             <div class="product-card__row">
               <p class="product-card__price"><span aria-hidden="true">Rs. </span><data value="200">200</data></p>
               <a class="product-card__btn" href="#">Order Now<span class="visually-hidden"> Lungo coffee</span></a>
@@ -184,7 +184,7 @@
         <div class="carousel__track" role="group" aria-label="Our Special Dessert" tabindex="0">
           <article class="product-card" id="dessert-1">
             <div class="product-card__media">
-              <img class="product-card__img" src="assets/img/dessert-1.svg" alt="Slice of chocolate cake" width="334" height="364" loading="lazy" decoding="async">
+              <picture><source srcset="assets/img/dessert-1.avif" type="image/avif"><source srcset="assets/img/dessert-1.webp" type="image/webp"><img class="product-card__img" src="assets/img/dessert-1.jpg" alt="Two cups of latte art coffee on a wooden table among plant leaves" width="334" height="364" loading="lazy" decoding="async"></picture>
               <input class="product-card__fav-input visually-hidden" type="checkbox" id="fav-dessert-1">
               <label class="product-card__fav" for="fav-dessert-1">
                 <span class="visually-hidden">Add Chocolate cake to favorites</span>
@@ -192,7 +192,7 @@
               </label>
             </div>
             <h3 class="product-card__title">Chocolate cake</h3>
-            <p class="product-card__desc">probandq descripcion de cafe</p>
+            <p class="product-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
             <div class="product-card__row">
               <p class="product-card__price"><span aria-hidden="true">Rs. </span><data value="200">200</data></p>
               <a class="product-card__btn" href="#">Order Now<span class="visually-hidden"> Chocolate cake</span></a>
@@ -200,7 +200,7 @@
           </article>
           <article class="product-card" id="dessert-2">
             <div class="product-card__media">
-              <img class="product-card__img" src="assets/img/dessert-2.svg" alt="Slice of chocolate cake" width="334" height="364" loading="lazy" decoding="async">
+              <picture><source srcset="assets/img/dessert-2.avif" type="image/avif"><source srcset="assets/img/dessert-2.webp" type="image/webp"><img class="product-card__img" src="assets/img/dessert-2.jpg" alt="Black coffee in a white cup on a wooden tray with green leaves" width="334" height="364" loading="lazy" decoding="async"></picture>
               <input class="product-card__fav-input visually-hidden" type="checkbox" id="fav-dessert-2">
               <label class="product-card__fav" for="fav-dessert-2">
                 <span class="visually-hidden">Add Chocolate cake to favorites</span>
@@ -208,7 +208,7 @@
               </label>
             </div>
             <h3 class="product-card__title">Chocolate cake</h3>
-            <p class="product-card__desc">probandq descripcion de cafe</p>
+            <p class="product-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
             <div class="product-card__row">
               <p class="product-card__price"><span aria-hidden="true">Rs. </span><data value="200">200</data></p>
               <a class="product-card__btn" href="#">Order Now<span class="visually-hidden"> Chocolate cake</span></a>
@@ -216,7 +216,7 @@
           </article>
           <article class="product-card" id="dessert-3">
             <div class="product-card__media">
-              <img class="product-card__img" src="assets/img/dessert-3.svg" alt="Slice of chocolate cake" width="334" height="364" loading="lazy" decoding="async">
+              <picture><source srcset="assets/img/dessert-3.avif" type="image/avif"><source srcset="assets/img/dessert-3.webp" type="image/webp"><img class="product-card__img" src="assets/img/dessert-3.jpg" alt="Cappuccino with latte art on a dark blue surface, seen from above" width="334" height="364" loading="lazy" decoding="async"></picture>
               <input class="product-card__fav-input visually-hidden" type="checkbox" id="fav-dessert-3">
               <label class="product-card__fav" for="fav-dessert-3">
                 <span class="visually-hidden">Add Chocolate cake to favorites</span>
@@ -224,7 +224,7 @@
               </label>
             </div>
             <h3 class="product-card__title">Chocolate cake</h3>
-            <p class="product-card__desc">probando.</p>
+            <p class="product-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
             <div class="product-card__row">
               <p class="product-card__price"><span aria-hidden="true">Rs. </span><data value="200">200</data></p>
               <a class="product-card__btn" href="#">Order Now<span class="visually-hidden"> Chocolate cake</span></a>
@@ -232,7 +232,7 @@
           </article>
           <article class="product-card" id="dessert-4">
             <div class="product-card__media">
-              <img class="product-card__img" src="assets/img/dessert-4.svg" alt="Slice of chocolate cake" width="334" height="364" loading="lazy" decoding="async">
+              <picture><source srcset="assets/img/dessert-4.avif" type="image/avif"><source srcset="assets/img/dessert-4.webp" type="image/webp"><img class="product-card__img" src="assets/img/dessert-4.jpg" alt="Latte with heart-shaped latte art in a white cup" width="334" height="364" loading="lazy" decoding="async"></picture>
               <input class="product-card__fav-input visually-hidden" type="checkbox" id="fav-dessert-4">
               <label class="product-card__fav" for="fav-dessert-4">
                 <span class="visually-hidden">Add Chocolate cake to favorites</span>
@@ -240,7 +240,7 @@
               </label>
             </div>
             <h3 class="product-card__title">Chocolate cake</h3>
-            <p class="product-card__desc">probando.</p>
+            <p class="product-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
             <div class="product-card__row">
               <p class="product-card__price"><span aria-hidden="true">Rs. </span><data value="200">200</data></p>
               <a class="product-card__btn" href="#">Order Now<span class="visually-hidden"> Chocolate cake</span></a>
@@ -248,7 +248,7 @@
           </article>
           <article class="product-card" id="dessert-5">
             <div class="product-card__media">
-              <img class="product-card__img" src="assets/img/dessert-1.svg" alt="Slice of chocolate cake" width="334" height="364" loading="lazy" decoding="async">
+              <picture><source srcset="assets/img/dessert-1.avif" type="image/avif"><source srcset="assets/img/dessert-1.webp" type="image/webp"><img class="product-card__img" src="assets/img/dessert-1.jpg" alt="Two cups of latte art coffee on a wooden table among plant leaves" width="334" height="364" loading="lazy" decoding="async"></picture>
               <input class="product-card__fav-input visually-hidden" type="checkbox" id="fav-dessert-5">
               <label class="product-card__fav" for="fav-dessert-5">
                 <span class="visually-hidden">Add Chocolate cake to favorites</span>
@@ -256,7 +256,7 @@
               </label>
             </div>
             <h3 class="product-card__title">Chocolate cake</h3>
-            <p class="product-card__desc">probando.</p>
+            <p class="product-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
             <div class="product-card__row">
               <p class="product-card__price"><span aria-hidden="true">Rs. </span><data value="200">200</data></p>
               <a class="product-card__btn" href="#">Order Now<span class="visually-hidden"> Chocolate cake</span></a>
@@ -264,7 +264,7 @@
           </article>
           <article class="product-card" id="dessert-6">
             <div class="product-card__media">
-              <img class="product-card__img" src="assets/img/dessert-2.svg" alt="Slice of chocolate cake" width="334" height="364" loading="lazy" decoding="async">
+              <picture><source srcset="assets/img/dessert-2.avif" type="image/avif"><source srcset="assets/img/dessert-2.webp" type="image/webp"><img class="product-card__img" src="assets/img/dessert-2.jpg" alt="Black coffee in a white cup on a wooden tray with green leaves" width="334" height="364" loading="lazy" decoding="async"></picture>
               <input class="product-card__fav-input visually-hidden" type="checkbox" id="fav-dessert-6">
               <label class="product-card__fav" for="fav-dessert-6">
                 <span class="visually-hidden">Add Chocolate cake to favorites</span>
@@ -272,7 +272,7 @@
               </label>
             </div>
             <h3 class="product-card__title">Chocolate cake</h3>
-            <p class="product-card__desc">probando.</p>
+            <p class="product-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
             <div class="product-card__row">
               <p class="product-card__price"><span aria-hidden="true">Rs. </span><data value="200">200</data></p>
               <a class="product-card__btn" href="#">Order Now<span class="visually-hidden"> Chocolate cake</span></a>
@@ -284,12 +284,12 @@
     </section>
 
     <section class="promo" aria-labelledby="promo-title">
-      <img class="promo__img promo__img--left" src="assets/img/promo-hand.svg" alt="" width="520" height="335" loading="lazy" decoding="async">
+      <picture><source srcset="assets/img/promo-hand.avif" type="image/avif"><source srcset="assets/img/promo-hand.webp" type="image/webp"><img class="promo__img promo__img--left" src="assets/img/promo-hand.png" alt="" width="520" height="335" loading="lazy" decoding="async"></picture>
       <div class="promo__content">
         <h2 class="promo__title" id="promo-title">Check Out Our Best Coffee Beans</h2>
         <a class="promo__btn" href="#">Explore Our Products<span class="icon icon--chevron" aria-hidden="true"></span></a>
       </div>
-      <img class="promo__img promo__img--right" src="assets/img/promo-beans.svg" alt="" width="503" height="335" loading="lazy" decoding="async">
+      <picture><source srcset="assets/img/promo-beans.avif" type="image/avif"><source srcset="assets/img/promo-beans.webp" type="image/webp"><img class="promo__img promo__img--right" src="assets/img/promo-beans.png" alt="" width="503" height="335" loading="lazy" decoding="async"></picture>
     </section>
 
     <section class="testimonials" aria-labelledby="testimonials-title">
@@ -302,34 +302,34 @@
           <figcaption class="testimonial-card__head">
             <img class="testimonial-card__avatar" src="assets/img/avatar-1.svg" alt="" width="56" height="56" loading="lazy" decoding="async">
             <span class="testimonial-card__who">
-              <span class="testimonial-card__name">santiago gonzalez</span>
-              <span class="testimonial-card__role">estudiante</span>
+              <span class="testimonial-card__name">James Smith</span>
+              <span class="testimonial-card__role">Entrepreneur</span>
             </span>
             <span class="testimonial-card__rating" role="img" aria-label="5 out of 5 stars"><span class="icon icon--star testimonial-card__star" aria-hidden="true"></span><span class="icon icon--star testimonial-card__star" aria-hidden="true"></span><span class="icon icon--star testimonial-card__star" aria-hidden="true"></span><span class="icon icon--star testimonial-card__star" aria-hidden="true"></span><span class="icon icon--star testimonial-card__star" aria-hidden="true"></span></span>
           </figcaption>
-          <blockquote class="testimonial-card__text">probando.</blockquote>
+          <blockquote class="testimonial-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</blockquote>
         </figure>
         <figure class="testimonial-card testimonial-card--featured" id="t-2">
           <figcaption class="testimonial-card__head">
             <img class="testimonial-card__avatar" src="assets/img/avatar-2.svg" alt="" width="56" height="56" loading="lazy" decoding="async">
             <span class="testimonial-card__who">
-              <span class="testimonial-card__name">mirko huck</span>
-              <span class="testimonial-card__role">estudiante</span>
+              <span class="testimonial-card__name">James Smith</span>
+              <span class="testimonial-card__role">Entrepreneur</span>
             </span>
             <span class="testimonial-card__rating" role="img" aria-label="4 out of 5 stars"><span class="icon icon--star testimonial-card__star" aria-hidden="true"></span><span class="icon icon--star testimonial-card__star" aria-hidden="true"></span><span class="icon icon--star testimonial-card__star" aria-hidden="true"></span><span class="icon icon--star testimonial-card__star" aria-hidden="true"></span><span class="icon icon--star testimonial-card__star testimonial-card__star--off" aria-hidden="true"></span></span>
           </figcaption>
-          <blockquote class="testimonial-card__text">probando..</blockquote>
+          <blockquote class="testimonial-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</blockquote>
         </figure>
         <figure class="testimonial-card" id="t-3">
           <figcaption class="testimonial-card__head">
             <img class="testimonial-card__avatar" src="assets/img/avatar-3.svg" alt="" width="56" height="56" loading="lazy" decoding="async">
             <span class="testimonial-card__who">
-              <span class="testimonial-card__name">joaquin gonzalez</span>
-              <span class="testimonial-card__role">desarrollador</span>
+              <span class="testimonial-card__name">James Smith</span>
+              <span class="testimonial-card__role">Entrepreneur</span>
             </span>
             <span class="testimonial-card__rating" role="img" aria-label="5 out of 5 stars"><span class="icon icon--star testimonial-card__star" aria-hidden="true"></span><span class="icon icon--star testimonial-card__star" aria-hidden="true"></span><span class="icon icon--star testimonial-card__star" aria-hidden="true"></span><span class="icon icon--star testimonial-card__star" aria-hidden="true"></span><span class="icon icon--star testimonial-card__star" aria-hidden="true"></span></span>
           </figcaption>
-          <blockquote class="testimonial-card__text">probando..</blockquote>
+          <blockquote class="testimonial-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</blockquote>
         </figure>
       </div>
       <ul class="testimonials__dots">
@@ -340,7 +340,7 @@
     </section>
 
     <section class="newsletter" aria-labelledby="newsletter-title">
-      <img class="newsletter__img newsletter__img--left" src="assets/img/newsletter-beans.svg" alt="" width="482" height="321" loading="lazy" decoding="async">
+      <picture><source srcset="assets/img/newsletter-beans.avif" type="image/avif"><source srcset="assets/img/newsletter-beans.webp" type="image/webp"><img class="newsletter__img newsletter__img--left" src="assets/img/newsletter-beans.jpg" alt="" width="482" height="321" loading="lazy" decoding="async"></picture>
       <div class="newsletter__content">
         <h2 class="newsletter__title" id="newsletter-title">Join in and get 15% off!</h2>
         <p class="newsletter__sub">Subscribe to our newsletter and get exclusive offers.</p>
@@ -353,7 +353,7 @@
           <button class="newsletter__btn" type="submit">Subscribe</button>
         </form>
       </div>
-      <img class="newsletter__img newsletter__img--right" src="assets/img/newsletter-beans.svg" alt="" width="482" height="321" loading="lazy" decoding="async">
+      <picture><source srcset="assets/img/newsletter-beans.avif" type="image/avif"><source srcset="assets/img/newsletter-beans.webp" type="image/webp"><img class="newsletter__img newsletter__img--right" src="assets/img/newsletter-beans.jpg" alt="" width="482" height="321" loading="lazy" decoding="async"></picture>
     </section>
   </main>
 
